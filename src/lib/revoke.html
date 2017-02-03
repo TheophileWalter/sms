@@ -1,0 +1,29 @@
+			<script src='https://www.google.com/recaptcha/api.js'></script>
+			<div class="wrapper style1 first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="8u 12u(mobile)">
+							<header>
+								<h1><strong><a href="/sms/" style="text-decoration:none;">Simple Message Signature</a></strong></h1>
+							</header>
+							<p>Revoke a pair of keys</p>
+							<form method="post" action="revoke.php">
+								<div>
+									<div class="row">
+										<div class="12u">
+											If you think that someone has access to your private key and you wish to mark your key as unsafe, please fill out the form below.<br />
+											<b>Warning: This action is irrevocable!</b><br /><br />
+											<h3>Enter your private key</h3>
+											<textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="font-family:Monospace;color:#404040;" name="private_key"></textarea><br /><br />
+											<h3>Enter your public key</h3>
+											<textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="font-family:Monospace;color:#404040;" name="public_key"></textarea><br /><br />
+											<div class="g-recaptcha" data-sitekey="6LcSlx4TAAAAAMtHSF8G2NKmti7Iw710ydFZJ9kH"></div><br /><br />
+											<input type="submit" value="Revoke my keys" />
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</article>
+			</div>

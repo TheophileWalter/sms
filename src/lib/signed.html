@@ -1,0 +1,28 @@
+			<div class="wrapper style1 first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="8u 12u(mobile)">
+							<header>
+								<h1><strong><a href="/sms/" style="text-decoration:none;">Simple Message Signature</a></strong></h1>
+							</header>
+							<p>Your message has been signed!</p>
+							<form>
+								<div>
+									<div class="row">
+										<div class="12u">
+											Share that message (with the signature) to people who already have your public key, so the can check if you are the author of the message and if it has not been modified by someone else.<br />
+											<b>Do not modify this message, it would make its signature incorrect.</b><br /><br />
+											<h3>Your signed message</h3>
+											<textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" onclick="this.focus();this.select()" readonly="readonly" style="font-family:Monospace;color:#404040;">{MESSAGE}</textarea><br /><br />
+										</div>
+									</div>
+								</div>
+							</form>
+							You can
+							<form method="get" action="sign.php">
+								<input type="submit" value="Sign another message" />
+							</form>
+						</div>
+					</div>
+				</article>
+			</div>

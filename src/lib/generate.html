@@ -1,0 +1,30 @@
+			<div class="wrapper style1 first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="8u 12u(mobile)">
+							<header>
+								<h1><strong><a href="/sms/" style="text-decoration:none;">Simple Message Signature</a></strong></h1>
+							</header>
+							<p>Here are your public and private keys</p>
+							<form>
+								<div>
+									<div class="row">
+										<div class="12u">
+											You must share the public key with everybody that will recieve your messages, and keep your private key in a secure place for you only. If you lost it, you will never can sign messages for the public key. If someone get your private key, he can sign messages in your place!<br />
+											<b>You must use the same pair of keys for every messages you sign! Do not generate new keys for every message.</b><br /><br />
+											<h3>Private key</h3>
+											<textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" onclick="this.focus();this.select()" readonly="readonly" style="font-family:Monospace;color:#404040;">{PRIVATE_KEY}</textarea><br /><br />
+											<h3>Public key</h3>
+											<textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" onclick="this.focus();this.select()" readonly="readonly" style="font-family:Monospace;color:#404040;">{PUBLIC_KEY}</textarea><br /><br />
+										</div>
+									</div>
+								</div>
+							</form>
+							You can now
+							<form method="get" action="sign.php">
+								<input type="submit" value="Sign a message" />
+							</form>
+						</div>
+					</div>
+				</article>
+			</div>
