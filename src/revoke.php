@@ -4,6 +4,8 @@
 require_once "lib/phpseclib/Math/BigInteger.php";
 require_once "lib/phpseclib/Crypt/RSA.php";
 
+$RECAPTCHA_SECRET = "XXXXXXXX";
+
 $title = "Simple Message Signature - Revoke a key";
 
 $content = "";
@@ -49,7 +51,7 @@ if (!isset($_POST['private_key'])) {
 				
 			} else {
 	
-				$response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LcSlx4TAAAAAM1CZ3eHeIh2cfEiSoTIhozx2KH_&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
+				$response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$RECAPTCHA_SECRET&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
 				
 				if($response['success'] == false) {
 		
