@@ -1,5 +1,5 @@
-# sms
-Simple Message Signature  
+# Simple Message Signature
+https://walter.tw/sms
 This website allow you to use RSA based signatures for your messages very simply.  
 You just need to generate a key pair and sign a message in one click!  
   
