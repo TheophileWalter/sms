@@ -10,4 +10,15 @@ message --->(sha256)--->(RSA encryption with private key)--->(base64 encode)--->
   
 To check the signature just check if this two lines are equals  
 message --->(sha256)--> hash  
-Signature --->(base64 decode)--->(RSA decrypt with public key)---> original_hash
+Signature --->(base64 decode)--->(RSA decrypt with public key)---> original_hash  
+  
+  
+## Formatting of messages
+Messages with the signature are constructed on the following model:  
+> This is the original message  
+> The original message can be on multiplte lines  
+>   
+> Some text to explain how/where you can check the signature  
+> SIGNATURE:*(Here goes the signature)*  
+  
+*Note that a blank line is added after the original message*
